@@ -24,4 +24,28 @@ public enum Direction {
 		this.dx = dx;
 		this.dy = dy;
 	}
+
+	public static Direction translateDirection(String s){
+		char c = s.charAt(0);
+		return translateDirection(c);
+	}
+
+	public static Direction translateDirection(char c){
+		switch(c){
+		case 'U':
+		case 'N':
+			return NORTH;
+		case 'R':
+		case 'E':
+			return EAST;
+		case 'D':
+		case 'S':
+			return SOUTH;
+		case 'L':
+		case 'W':
+			return WEST;
+		default:
+			throw new IllegalArgumentException("Translation error with Direction: " + c);
+		}
+	}
 }

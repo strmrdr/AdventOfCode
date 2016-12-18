@@ -2,6 +2,11 @@ package com.cressoft.aoc.aoc1;
 
 import com.cressoft.aoc.Helpers;
 
+/**
+ *
+ * @see Main Associated Main class for problem description
+ *
+ */
 public class AoC1P1 extends AbstractAoC1{
 	public AoC1P1(){
 		super(1);
