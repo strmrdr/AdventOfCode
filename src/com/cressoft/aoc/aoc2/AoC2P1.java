@@ -16,6 +16,7 @@ public class AoC2P1 extends AbstractAoC2{
 
 	@Override
 	public String solve(String input) {
+		String[] instructions = Helpers.removeWhitespace(input).split(System.lineSeparator());
 		StringBuilder sb = new StringBuilder();
 
 		for(String each : instructions){
