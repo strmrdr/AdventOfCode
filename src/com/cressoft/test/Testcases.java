@@ -12,11 +12,15 @@ import com.cressoft.aoc.aoc2.AoC2P1;
 import com.cressoft.aoc.aoc2.AoC2P2;
 import com.cressoft.aoc.aoc3.AoC3P1;
 import com.cressoft.aoc.aoc3.AoC3P2;
+import com.cressoft.aoc.aoc4.AoC4P1;
+import com.cressoft.aoc.aoc4.AoC4P2;
 
 public class Testcases {
 	public static final String INPUT01 = Helpers.getFileInput("Resources\\day01.txt");
 	public static final String INPUT02 = Helpers.getFileInput("Resources\\day02.txt");
 	public static final String INPUT03 = Helpers.getFileInput("Resources\\day03.txt");
+	public static final String INPUT04 = Helpers.getFileInput("Resources\\day04.txt");
+
 
 	@Test
 	public void Day1Test(){
@@ -42,4 +46,11 @@ public class Testcases {
 		assertEquals("1921", aoc2.solve(INPUT03));
 	}
 
+	@Test
+	public void Day4Test() {
+		AoC aoc1 = new AoC4P1();
+		assertEquals("137896", aoc1.solve(INPUT04));
+		AoC aoc2 = new AoC4P2();
+		assertEquals("501", aoc2.solve(INPUT04));
+	}
 }

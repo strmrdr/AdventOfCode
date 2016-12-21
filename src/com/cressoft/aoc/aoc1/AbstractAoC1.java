@@ -10,10 +10,11 @@ public abstract class AbstractAoC1 extends AoC{
 
 	protected final Point DEFAULT_START_POSITION = new Point();
 	protected final Direction DEFAULT_START_DIRECTION = Direction.NORTH;
-	protected static final String PROMPT = "Enter movement sequence: ";
+	public static final String PROMPT = "Enter movement sequence: ";
+	public static final String OUTPUT_MESSAGE = "The distance to Bunny HQ is: ";
 
 	public AbstractAoC1(int partNumber){
-		super(partNumber);
+		super(partNumber, OUTPUT_MESSAGE);
 		this.position = DEFAULT_START_POSITION;
 		this.direction = DEFAULT_START_DIRECTION;
 	}
