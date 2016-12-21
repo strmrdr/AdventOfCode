@@ -10,12 +10,13 @@ public abstract class AbstractAoC2 extends AoC{
 	protected Direction direction;
 	protected char[][] keypad;
 
-	protected static final String PROMPT = "Enter keypad sequence: ";
+	public static final String PROMPT = "Enter keypad sequence: ";
+	public static final String OUTPUT_MESSAGE = "The keypad password is: ";
 	protected final Direction DEFAULT_START_DIRECTION = Direction.NORTH;
 	protected static final char INVALID_CHARACTER = 0;
 
 	public AbstractAoC2(int partNumber, Point position, char[][] keypad) {
-		super(partNumber);
+		super(partNumber, OUTPUT_MESSAGE);
 		this.position = position;
 		this.direction = DEFAULT_START_DIRECTION;
 		this.keypad = keypad;

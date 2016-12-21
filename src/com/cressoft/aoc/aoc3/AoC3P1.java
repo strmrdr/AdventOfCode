@@ -15,7 +15,8 @@ public class AoC3P1 extends AbstractAoC3{
 				validTriangles++;
 			}
 		}
-		return String.valueOf(validTriangles);
+		this.solution = String.valueOf(validTriangles);
+		return solution;
 	}
 
 }

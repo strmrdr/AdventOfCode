@@ -7,7 +7,9 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Helpers {
-	public static String getConsoleInput(Scanner in, String prompt){
+	private static final Scanner in = new Scanner(System.in);
+
+	public static String getConsoleInput(String prompt){
 		StringBuilder sb = new StringBuilder();
 		String s;
 
